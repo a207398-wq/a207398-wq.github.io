@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lihongxin | Mobile Programming e-Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f9f9;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#009688,#26a69a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#009688;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00695c;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#009688;
+    font-size:2rem;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:#009688;
+    margin-bottom:10px;
+}
+
+iframe{
+    width:100%;
+    height:250px;
+    border:none;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#009688;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00695c;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#009688;
+    color:white;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+footer{
+    background:#00695c;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.highlight{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>Lihongxin</h1>
+    <p>A207398 | Software Engineering</p>
+    <p>Mobile Programming e-Portfolio</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resources">Resources</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h2 class="section-title">About Me</h2>
+    <div class="highlight">
+        <p><strong>Name:</strong> Lihongxin</p>
+        <p><strong>Matric No:</strong> A207398</p>
+        <p><strong>Programme:</strong> Software Engineering</p>
+        <p><strong>Instructor:</strong> Cikgu Izwan</p>
+        <br>
+        <p>
+            Welcome to my Mobile Programming e-Portfolio. This portfolio showcases my learning journey throughout the semester, from building basic user interfaces to developing complete Android applications with database integration, APIs, sensors, and cloud services.
+        </p>
+        <br>
+        <p>
+            <strong>SDG 3: Good Health and Well-being</strong><br>
+            I selected SDG 3 because technology can play an important role in improving people's health, safety, and overall quality of life through innovative mobile solutions.
+        </p>
+    </div>
+</section>
+
+<section id="labs">
+    <h2 class="section-title">Laboratory Activities</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/NNMeevm_hBg?si=jEO0T7oBU1XMNYo3" allowfullscreen></iframe>
+            <div class="card-content">
+                <h3>Lab 1 - User Interface Design</h3>
+                <p>This lab introduced the fundamentals of Jetpack Compose layouts and responsive user interfaces. It provided the foundation for future mobile application development.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/IH_AG1Uc7EU?si=aOxWy6ybhGGTM85t" allowfullscreen></iframe>
+            <div class="card-content">
+                <h3>Lab 2 - User Interaction</h3>
+                <p>I learned how to handle user interactions, button clicks, and state management. This improved my understanding of application usability and responsiveness.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/5QfvdGUFZ3I?si=XYvBbYFtjlLajox5" allowfullscreen></iframe>
+            <div class="card-content">
+                <h3>Lab 3 - Material Design</h3>
+                <p>This lab focused on Material Design principles and creating modern Android interfaces that are visually appealing and user-friendly.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/Beloz2Ff0To?si=l8RSWWQrF_1o_zvt" allowfullscreen></iframe>
+            <div class="card-content">
+                <h3>Lab 4 - Navigation</h3>
+                <p>I learned how to connect multiple screens using Navigation Components and manage application flow effectively.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/fBjGH88cmZQ?si=Ag1p2isFoBJw2d1C" allowfullscreen></iframe>
+            <div class="card-content">
+                <h3>Lab 5 - Room Database</h3>
+                <p>This lab introduced local data persistence using Room Database and CRUD operations, which are essential for real-world applications.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/kKX1dLDZwRE?si=vUifRje7u8VKiMqz" allowfullscreen></iframe>
+            <div class="card-content">
+                <h3>Project 1 - KEEP FITNESS</h3>
+
+                <p>
+                    KEEP FITNESS is a fitness management application designed to help users maintain healthy habits and track their daily fitness activities.
+                </p>
+
+                <br>
+
+                <p>
+                    Through this project, I applied navigation concepts, UI design principles, and Android development practices to build a complete mobile application.
+                </p>
+
+                <a class="btn" href="https://github.com/a207398-wq/project1.git" target="_blank">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/TGwOz1-gj1A?si=S1dLc-9EcXIQE-ob" allowfullscreen></iframe>
+            <div class="card-content">
+                <h3>Project 2 - KEEP FITNESS</h3>
+
+                <p>
+                    KEEP FITNESS integrates local databases, APIs, sensors, and cloud technologies to create a smarter fitness tracking experience.
+                </p>
+
+                <br>
+
+                <p>
+                    This project strengthened my understanding of Room Database, Retrofit, Firebase integration, sensor management, and modern Android architecture.
+                </p>
+
+                <a class="btn" href="https://github.com/a207398-wq/project2.git" target="_blank">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="reflection">
+    <h2 class="section-title">Reflection & Learning Journey</h2>
+
+    <div class="highlight">
+        <p>
+            My learning journey from Lab 1 to Project 2 has been a transformative experience, taking me from understanding basic UI layouts to building complex, data-driven mobile applications.
+        </p>
+
+        <br>
+
+        <p>
+            Through each lab, I progressively mastered essential skills such as handling user interactions, implementing navigation, and integrating local databases with Room.
+        </p>
+
+        <br>
+
+        <p>
+            By the time I reached Project 2, I was able to synthesize these concepts with API integration and sensor usage to create a functional, real-world application.
+        </p>
+
+        <br>
+
+        <p>
+            This experience has significantly strengthened both my technical skills and confidence as a Software Engineering student.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills & Tech Stack</h2>
+
+    <div class="skills">
+        <div class="skill">Kotlin</div>
+        <div class="skill">Jetpack Compose</div>
+        <div class="skill">Room Database</div>
+        <div class="skill">Retrofit</div>
+        <div class="skill">Firebase</div>
+        <div class="skill">Navigation Component</div>
+        <div class="skill">Coroutines</div>
+        <div class="skill">Android Studio</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<section id="resources">
+    <h2 class="section-title">Resources</h2>
+
+    <div class="highlight">
+        <ul>
+            <li>Android Developer Documentation</li>
+            <li>Jetpack Compose Documentation</li>
+            <li>Room Database Documentation</li>
+            <li>Retrofit Documentation</li>
+            <li>Firebase Documentation</li>
+            <li>GitHub</li>
+            <li>YouTube Learning Resources</li>
+            <li>AI-assisted learning support for debugging and documentation</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Lihongxin (A207398) | Mobile Programming e-Portfolio</p>
+</footer>
+
+</body>
+</html>
